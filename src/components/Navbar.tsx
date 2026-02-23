@@ -34,7 +34,7 @@ function ListItem({
 
 const Navbar = () => {
   return (
-    <div className='fixed top-10 py-3 rounded-full bg-[#1b1b1b]  mx-auto inset-x-0  max-w-2xl z-50 flex justify-center'>
+    <div className='fixed top-10 py-3 rounded-full bg-black  mx-auto inset-x-0  max-w-2xl z-50 flex justify-center'>
       <NavigationMenu>
         <NavigationMenuList>
           <NavigationMenuItem >
@@ -43,22 +43,22 @@ const Navbar = () => {
             </NavigationMenuLink>
           </NavigationMenuItem>
           <NavigationMenuItem>
-            <NavigationMenuTrigger>Our Cources</NavigationMenuTrigger>
+            <NavigationMenuTrigger className='hover:opacity-80'>Our Cources</NavigationMenuTrigger>
             <NavigationMenuContent>
               <ul className="w-96">
-                <ListItem href='/cources'>
+                <ListItem href='/courses'>
                   All Cources
                 </ListItem>
-                <ListItem href='/cources'>
+                <ListItem href='/courses'>
                   Basic Music Theory
                 </ListItem>
-                <ListItem href='/cources'>
+                <ListItem href='/courses'>
                   Advanced Composition
                 </ListItem>
-                <ListItem href='/cources'>
+                <ListItem href='/courses'>
                   Songwriting
                 </ListItem>
-                <ListItem href='/cources'>
+                <ListItem href='/courses'>
                   Music Production
                 </ListItem>
 
